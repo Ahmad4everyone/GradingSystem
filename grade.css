@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+body{
+    text-align: center;
+    background-color: gray;
+    font-family: sans-serif;
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+
+h1{
+    color: maroon;
+    margin-bottom: 20px;
+}
+
+.container{
+    height: 80vh;
+    width: 45vw;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 12px 12px 12px silver;
+    background-color: lightcoral;
+    margin-top: 20px;
+}
+
+input{
+    color: bisque;
+    font-weight: 800;
+    border: none;
+    background-color: black;
+    font-size: 25px;
+    height: 45px;
+    text-align: center;
+    width: 400px;
+    /* outline: none; */
+    border-radius: 5px;
+}
+button {
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: black;
+    color: wheat;
+    border: 1px solid gold;
+    box-shadow: 4px 4px 4px;
+}
+button:hover{
+    background-color: gray;
+}
+button:active{
+    opacity: 0.9;
+}
+
+.result{
+    color: white;
+    font-size: 850;
+    margin: auto;
+    height: 125px;
+    margin-top: 35px;
+    width: 400px;
+    background-color: lightcoral;
+    border-radius: 15px;
+    transition: 1s;
+    transform: scale(X,50);
+}
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+    section {
+        display: block;
+    }
+    body{
+        background-color: beige;
+    }
+    .container{
+        height: 80vh;
+        width: 250px;
+        border-radius: 25px;
+        margin: auto;
+        box-shadow: 12px 12px 12px silver;
+        background-color: slateblue;
+        margin-left: 50px;
+    }
+    h1 {
+        color: aquamarine;
+    }
+    input{
+        color: bisque;
+        font-weight: 800;
+        border: none;
+        background-color: black;
+        font-size: 25px;
+        height: 45px;
+        text-align: center;
+        width: 150px;
+        outline: none;
+        border-radius: 25px;
+    }
+    .result{
+        
+        width: 200px;
+        margin-left: 70px;
+        background-color: teal;
+    }
+    button {
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 25px;
+        background-color: black;
+        color: wheat;
+        border: 1px solid gold;
+        box-shadow: 4px 4px 4px;
+    }
+    
+}
