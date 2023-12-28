@@ -12,8 +12,7 @@ body{
     text-align: center;
     background-color: gray;
     font-family: sans-serif;
-    /* display: flex; */
-    /* justify-content: space-around; */
+   
 }
 
 h1{
@@ -29,6 +28,7 @@ h1{
     box-shadow: 12px 12px 12px silver;
     background-color: lightcoral;
     margin-top: 20px;
+    /* display: none; */
 }
 
 input{
@@ -67,10 +67,12 @@ button:active{
     height: 125px;
     margin-top: 35px;
     width: 400px;
-    background-color: lightcoral;
+    background-color: teal;
     border-radius: 15px;
+    box-shadow: 5px 15px 12px goldenrod;
     transition: 1s;
-    transform: scale(X,50);
+    transform: skewX(90);
+    display: none;
 }
 
 

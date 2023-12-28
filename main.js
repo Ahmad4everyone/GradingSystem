@@ -1,15 +1,24 @@
 function answer(){
+    var con = document.getElementById("cont")
     var math = document.getElementById("math").value
     var eng = document.getElementById("eng").value
     var phy = document.getElementById("phy").value
     var chem = document.getElementById("chem").value
     var bio = document.getElementById("bio").value
+    var res = document.getElementById("result")
 
-    var ahmad =Number(math) + Number(eng) + Number(phy) + Number(chem) + Number(bio)
+    var ahmad = Number(math) + Number(eng) + Number(phy) + Number(chem) + Number(bio)
     document.getElementById("total").innerHTML="Your total score is: " + ahmad
     var average=(ahmad*100)/500;
-    document.getElementById("average").innerHTML="You've got an average of: " + average
+    if(math === ''){
+        alert('pls fill in your result');
+        return;
+    }
+    res.style.display = 'block', con.style.display = 'none'
 
+    
+    document.getElementById("average").innerHTML="You've got an average of: " + average
+   
         if(average>=90 && average<=99){
             document.getElementById("grade").innerHTML=" Congratulaions! You've got A1"
         }
@@ -37,4 +46,6 @@ function answer(){
         else {
             document.getElementById("grade").innerHTML="Poor Result! F9"
         }
+
+        res.style.display = 'block'
 }
