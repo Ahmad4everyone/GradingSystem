@@ -90,16 +90,16 @@ button:active{
         background-color: beige;
     }
     .container{
-        height: 80vh;
-        width: 250px;
-        border-radius: 25px;
-        margin: auto;
+        height: 60vh;
+        width: 350px;
+        border-radius: 12px;
+        margin: 0 auto;
         box-shadow: 12px 12px 12px silver;
-        background-color: slateblue;
-        margin-left: 50px;
+        background-color: darkcyan;
     }
     h1 {
-        color: aquamarine;
+        color: black;
+        margin-top: 20px;
     }
     input{
         color: bisque;
@@ -109,14 +109,13 @@ button:active{
         font-size: 25px;
         height: 45px;
         text-align: center;
-        width: 150px;
+        width: 170px;
         outline: none;
-        border-radius: 25px;
+        border-radius: 16px;
     }
     .result{
-        
+        height: 150px;
         width: 200px;
-        margin-left: 70px;
         background-color: teal;
     }
     button {
@@ -127,7 +126,8 @@ button:active{
         background-color: black;
         color: wheat;
         border: 1px solid gold;
-        box-shadow: 4px 4px 4px;
+        box-shadow: 4px 4px 4px darkolivegreen;
+        margin-top: 20px;
     }
     
 }
