@@ -10,8 +10,8 @@ function answer(){
     var ahmad = Number(math) + Number(eng) + Number(phy) + Number(chem) + Number(bio)
     document.getElementById("total").innerHTML="Your total score is: " + ahmad
     var average=(ahmad*100)/500;
-    if(math === ''){
-        alert('pls fill in your result');
+    if(math === '' || ahmad > 500){
+        alert('pls fill in correctly!');
         return;
     }
     res.style.display = 'block', con.style.display = 'none'
@@ -19,7 +19,7 @@ function answer(){
     
     document.getElementById("average").innerHTML="You've got an average of: " + average
    
-        if(average>=90 && average<=99){
+        if(average>=90 || average<=99){
             document.getElementById("grade").innerHTML=" Congratulaions! You've got A1"
         }
         else if(average>=85){
@@ -29,7 +29,7 @@ function answer(){
             doocument.getElementById("grade").innerHTML=" Congratulations! You've got B3"
         }
         else if(average>=70){
-            document.getElementById("grade").innerHTML=" Congratulatios! You've got C4"
+            document.getElementById("grade").innerHTML=" Congratulations! You've got C4"
         }
         else if(average>=60){
             document.getElementById("grade").innerHTML="Fair! You've got C5!"
@@ -41,7 +41,7 @@ function answer(){
             document.getElementById("grade").innerHTML="You've got a D7!"
         }
         else if(average>=30){
-            document.getElementById("grade").innerHTML = "Congratulations! You've got an E8"
+            document.getElementById("grade").innerHTML = "Not so good! You've got an E8"
         }
         else {
             document.getElementById("grade").innerHTML="Poor Result! F9"
